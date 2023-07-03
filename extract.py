@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 #!usr/bin/python3
 """
-Created on Wed Apr 04 15:19:39 2018
-@author: J554696
-principal Financial group
+@author: Madhur Jain
 """
 
 import sys
@@ -39,7 +37,7 @@ def get_url_data(url_link,uid,upassword):
     Pass Input as a html url link and get html data
     @@ function takes input as url and return content of that file.
     """
-    prin_px = "https://" + uid + ":" + upassword + "@pfgproxy.principal.com:80"
+    prin_px = "https://" + uid + ":" + upassword + "@xyz.com:80"
     r = requests.get(url_link, proxies={"https":prin_px})
     #content = r.content.lower()
     content = r.content
@@ -49,7 +47,7 @@ def html_file_read():
     """
     pass statics file of html and get html data
     """
-    with open("C:/Users/G753903/Downloads/TopicModeling/Document.html" ,'r') as html_content:
+    with open("C:/Users/madhur/Downloads/TopicModeling/Document.html" ,'r') as html_content:
         data = html_content.read()
     return data
 

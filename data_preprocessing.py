@@ -2,9 +2,7 @@
 # encoding: utf-8
 #!usr/bin/python3
 """
-Created on Mon Apr 09 13:14:10 2018
-@author: G753903
-principal Financial group
+author: Madhur jain
 """
 
 import sys

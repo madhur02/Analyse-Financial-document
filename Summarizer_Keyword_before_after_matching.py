@@ -3,8 +3,8 @@ import os
 import pandas as pd
 import re
 from gensim.summarization.summarizer import summarize
-path = r"C:\Users\G753903\Downloads\Topic_Modelling_18072018\v2.1  20180718\Output_Result"
-summary_path = r"C:\Users\G753903\Downloads\Topic_Modelling_18072018\v2.1  20180718\Summary_output"
+path = r"C:\Users\madhur\Downloads\Topic_Modelling_18072018\v2.1  20180718\Output_Result"
+summary_path = r"C:\Users\madhur\Downloads\Topic_Modelling_18072018\v2.1  20180718\Summary_output"
 
 def get_domain_keyword(file_name ="domain_keyword.txt"):
     word_tokenization = []

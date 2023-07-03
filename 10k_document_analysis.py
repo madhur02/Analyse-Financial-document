@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 #!usr/bin/python3
 
-"""
-Created on Wed Apr 04 15:19:39 2018
-@author: G753903
-principal Financial group
-"""
-
 import sys
 from importlib import reload
 reload(sys)
@@ -27,9 +21,9 @@ def get_url_data(url_link):
     Pass Input as a html url link and get html data
     @@ function takes input as url and return content of that file.
     """
-    uid = "J554696"
-    upassword = "July@2018"
-    prin_px = "https://" + uid + ":" + upassword + "@pfgproxy.principal.com:80"
+    uid = ""
+    upassword = ""
+    prin_px = "https://" + uid + ":" + upassword + "xyz.com:80"
     r = requests.get(url_link, proxies={"https":prin_px})
     content = r.content.lower()
     return content
@@ -64,7 +58,7 @@ def entity_Extractor(content1,content2):
 
                 if (unit == None):
                     continue
-                replace_sent1 = replace_sent1.replace(text,'PRINCIPAL').strip()
+                replace_sent1 = replace_sent1.replace(text,'APPLE').strip()
                 tmp1.append(text)
 
         doc = nlp(replace_sent1)
@@ -75,7 +69,7 @@ def entity_Extractor(content1,content2):
             end_ind   = ent.end_char
             if text1 in ['_' ,""," "," "] or label in ["ORG"]:
                 continue
-            replace_sent1 = replace_sent1.replace(text1,'PRINCIPAL').strip()
+            replace_sent1 = replace_sent1.replace(text1,'APPLE').strip()
             tmp1.append(text1)
 
         org_sent1 = ''
@@ -99,7 +93,7 @@ def entity_Extractor(content1,content2):
 
                 if (unit == None):
                     continue
-                replace_sent2 = replace_sent2.replace(text,'PRINCIPAL').strip()
+                replace_sent2 = replace_sent2.replace(text,'APPLE').strip()
                 org_sent2  = org_sent2.replace(text,'<span style = "color:FF3393">'+text+ '</span>')
                 tmp2.append(text)
 
@@ -114,7 +108,7 @@ def entity_Extractor(content1,content2):
 
             if text2 in ['_' ,""," "," "] or label in ["ORG"]:
                     continue
-            replace_sent2 = replace_sent2.replace(text2,'PRINCIPAL').strip()
+            replace_sent2 = replace_sent2.replace(text2,'APPLE').strip()
             tmp2.append(text2)
 
         org_sent2 = ''

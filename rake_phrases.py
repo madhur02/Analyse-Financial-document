@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  5 11:52:41 2018
-
-@author: J554696
+@author: Madhur jain
 """
 
 import pandas as pd
@@ -76,6 +74,6 @@ def rake_main_handler(df):
     
 if __name__== "__main__":
     #pass
-    df= "".join(pd.read_csv(r'C:\Users\J554696\Desktop\TopicModeling\10K project _27062018\all_content.csv')['Before-Cleaning-Sentences'].values.tolist())
+    df= "".join(pd.read_csv(r'C:\Users\madhur\Desktop\TopicModeling\10K project _27062018\all_content.csv')['Before-Cleaning-Sentences'].values.tolist())
     phrase_list = rake_main_handler(df)
     

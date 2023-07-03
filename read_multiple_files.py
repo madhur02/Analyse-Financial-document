@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct  1 11:30:12 2018
-
-@author: J554696
+@author: Madhur jain
 """
 import pandas as pd
 import numpy as np
@@ -56,7 +54,7 @@ def main_function():
 
 
 
-path = 'C:\\Users\\J554696\\Desktop\\files\\*.txt'
+path = 'C:\\Users\\madhur\\Desktop\\files\\*.txt'
 
 def read_all_text_files(path):
     

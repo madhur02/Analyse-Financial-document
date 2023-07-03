@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  5 18:14:34 2018
-
-@author: J554696
+@author: Madhur Jain
 """
 
 import numpy as np
@@ -243,5 +241,5 @@ def main_scikit_learn(sheet_content):
 
 if __name__== "__main__":
     sheet_content = pd.read_csv("all_content.csv")
-    #content = pd.read_csv(r'C:\Users\J554696\Desktop\TopicModeling\10K project _27062018\all_content.csv')['Before-Cleaning-Sentences']
+    #content = pd.read_csv(r'C:\Users\madhur\Desktop\TopicModeling\10K project _27062018\all_content.csv')['Before-Cleaning-Sentences']
     main_scikit_learn(sheet_content)

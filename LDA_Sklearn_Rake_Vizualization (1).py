@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jul  5 18:14:34 2018
-
-@author: J554696
+@author: Madhur Jain
 """
 
 import numpy as np
@@ -211,7 +209,7 @@ def data_vizualization(filename,best_lda_model,data_vectorized,vectorizer):
     pyLDAvis.enable_notebook()
     panel = pyLDAvis.sklearn.prepare(best_lda_model, data_vectorized, vectorizer, mds='tsne')
     filename = filename.split('.')[0]+'_DataVisulatization.html'
-    path = r"C:\Users\G753903\Downloads\Topic_Modelling_18072018\v2.1  20180718\Visualization"
+    path = r"C:\Users\madhur\Downloads\Topic_Modelling_18072018\v2.1  20180718\Visualization"
     filename = os.path.join(path, filename)
     f = open(filename,"w")
     pyLDAvis.save_html(panel, f)
